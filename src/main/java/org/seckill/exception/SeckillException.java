@@ -18,6 +18,11 @@ package org.seckill.exception;
  */
 public class SeckillException extends RuntimeException
 {
+    /**
+     * serialVersionUID:TODO(用一句话描述这个变量表示什么).
+     * @since JDK 1.7
+     */
+    private static final long serialVersionUID = -8181529577964661145L;
 
     public SeckillException(String message, Throwable cause)
     {
