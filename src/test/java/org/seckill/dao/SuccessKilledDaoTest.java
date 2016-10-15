@@ -49,8 +49,8 @@ public class SuccessKilledDaoTest
     @Test
     public void testQueryByIdWithSecKill()
     {
-        long id = 1000L;
-        long userPhone = 13758948523L;
+        long id = 1001L;
+        long userPhone = 12345678996L;
         SuccessKilled queryByIdWithSecKill = successKilledDao.queryByIdWithSecKill(id, userPhone);
         SecKill secKill = queryByIdWithSecKill.getSecKill();
         

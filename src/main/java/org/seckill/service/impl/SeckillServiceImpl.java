@@ -125,8 +125,11 @@ public class SeckillServiceImpl implements SeckillService
     }
     
     /**
-     * 使用注解控制事务方法的优点： 1：开发团队达成一致约定，明确标注事务方法的编程风格。 2：保证事务方法的执行时间尽可能短，不要穿插其他网络操作，比如RPC/HTTP请求，将这些操作剥离到事务方法外部
-     * 3：不是所有的方法都需要事务，如只有一条修改操作、只读操作，这些操作不需要事务控制 看下mysql的行级锁 TODO 简单描述该方法的实现功能（可选）.
+     * 使用注解控制事务方法的优点： 
+     * 1：开发团队达成一致约定，明确标注事务方法的编程风格。 
+     * 2：保证事务方法的执行时间尽可能短，不要穿插其他网络操作，比如RPC/HTTP请求，将这些操作剥离到事务方法外部
+     * 3：不是所有的方法都需要事务，如只有一条修改操作、只读操作，这些操作不需要事务控制 
+     * 看下mysql的行级锁 TODO 简单描述该方法的实现功能（可选）.
      * 
      * @see org.seckill.service.SeckillService#excuteSeckill(long, long, java.lang.String)
      */

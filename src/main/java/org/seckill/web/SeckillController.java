@@ -85,7 +85,7 @@ public class SeckillController
     //ajax接口，返回 json
     @RequestMapping(value = "/{seckillId}/exposer", method = RequestMethod.POST,
         produces = {"application/json;charset=UTF-8"})
-    @ResponseBody
+    @ResponseBody//springMvc看到注解@ResponseBody时，会将本方法的返回值封装成json后返回
     public SeckillResult<Exposer> exposer(@PathVariable Long seckillId)
     {
         SeckillResult<Exposer> result;
